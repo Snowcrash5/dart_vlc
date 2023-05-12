@@ -20,16 +20,9 @@ dependencies:
 dev_dependencies:
   lints: ^2.0.1
 
-# REMOVE THIS BEFORE PUBLISHING ON pub.dev.
-dependency_overrides:
-  dart_vlc_ffi:
-    path: ./ffi
-
 flutter:
   # No platform channel implementation after migration to FFI.
   plugin:
     platforms:
-      windows:
-        pluginClass: DartVlcPlugin
       linux:
         pluginClass: DartVlcPlugin
